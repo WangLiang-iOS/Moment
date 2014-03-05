@@ -13,6 +13,10 @@
 #ifdef __OBJC__
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
-#import "MTLogManager.h"
+    #import "MTLogManager.h"
+
+    #import "CoreData+MagicalRecord.h"
+    #define MR_SHORTHAND
 
 #endif
+

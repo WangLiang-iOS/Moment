@@ -9,6 +9,7 @@
 #import "MTAppDelegate.h"
 #import "MTUIKit.h"
 #import "MTUserDefaultsManger.h"
+#import "MTLogManager.h"
 
 @interface MTAppDelegate()
 @end

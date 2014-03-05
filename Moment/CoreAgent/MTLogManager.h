@@ -9,11 +9,14 @@
 #import <Foundation/Foundation.h>
 #import "DDLog.h"
 
-#ifdef DEBUG
+#ifndef DDLOGLEVEL
+#if DEBUG
+#define DDLOGLEVEL
 static const int ddLogLevel = LOG_LEVEL_VERBOSE;
 #else
 static const int ddLogLevel = LOG_LEVEL_WARN;
-#endif
+#endif //DEBUG
+#endif //DDLOGLEVEL
 
 @interface MTLogManager : NSObject
 + (void)initLogs;

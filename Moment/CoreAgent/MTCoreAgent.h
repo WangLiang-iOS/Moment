@@ -7,9 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "CoreData+MagicalRecord.h"
 
 @interface MTCoreAgent : NSObject
 + (MTCoreAgent*)shareInstance;
+
 + (BOOL)isUserAccountVisable;
 
 + (void)dotest;
