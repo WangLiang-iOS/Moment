@@ -195,7 +195,7 @@
 		3507F40618A8C9250099493A /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
 		3507F40718A8C9250099493A /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
 		358CC7C018C71FE40037F708 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
-		358CC7C218C720D70037F708 /* DataModel 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DataModel 2.xcdatamodel"; sourceTree = "<group>"; };
+		358CC7C218C720D70037F708 /* DataModel 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "DataModel 2.xcdatamodel"; sourceTree = "<group>"; };
 		358CC7CE18C722A70037F708 /* Account.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Account.h; sourceTree = "<group>"; };
 		358CC7CF18C722A70037F708 /* Account.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Account.m; sourceTree = "<group>"; };
 		358CC7D018C722A70037F708 /* Feed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Feed.h; sourceTree = "<group>"; };
@@ -1191,8 +1191,8 @@
 				INFOPLIST_FILE = "Moment/Moment-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/wangliang-ms/Desktop/GitHub/Moment/Moment/ThridPart/360yunpan",
-					"/Users/wangliang-ms/Desktop/GitHub/Moment/Moment/ThridPart/WeChatSDK_1.4.2.1",
+					"\"$(SRCROOT)/Moment\"/**",
+					"\"$(SRCROOT)/Moment\"/**",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/Moment\"/**";
@@ -1213,8 +1213,8 @@
 				INFOPLIST_FILE = "Moment/Moment-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/wangliang-ms/Desktop/GitHub/Moment/Moment/ThridPart/360yunpan",
-					"/Users/wangliang-ms/Desktop/GitHub/Moment/Moment/ThridPart/WeChatSDK_1.4.2.1",
+					"\"$(SRCROOT)/Moment\"/**",
+					"\"$(SRCROOT)/Moment\"/**",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/Moment\"/**";
