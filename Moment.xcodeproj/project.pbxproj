@@ -24,6 +24,11 @@
 		3507F3FF18A8C6AB0099493A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3507F3FE18A8C6AB0099493A /* Security.framework */; };
 		3507F40118A8C6C60099493A /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3507F40018A8C6C60099493A /* AssetsLibrary.framework */; };
 		3507F40818A8C9250099493A /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3507F40518A8C9250099493A /* libWeChatSDK.a */; };
+		358CC7C118C71FE40037F708 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 358CC7BF18C71FE40037F708 /* DataModel.xcdatamodeld */; };
+		358CC7D718C722A70037F708 /* Account.m in Sources */ = {isa = PBXBuildFile; fileRef = 358CC7CF18C722A70037F708 /* Account.m */; };
+		358CC7D818C722A70037F708 /* Feed.m in Sources */ = {isa = PBXBuildFile; fileRef = 358CC7D118C722A70037F708 /* Feed.m */; };
+		358CC7D918C722A70037F708 /* _Account.m in Sources */ = {isa = PBXBuildFile; fileRef = 358CC7D418C722A70037F708 /* _Account.m */; };
+		358CC7DA18C722A70037F708 /* _Feed.m in Sources */ = {isa = PBXBuildFile; fileRef = 358CC7D618C722A70037F708 /* _Feed.m */; };
 		35BDDD4A188CF8FB0038537E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35BDDD49188CF8FB0038537E /* Foundation.framework */; };
 		35BDDD4C188CF8FB0038537E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35BDDD4B188CF8FB0038537E /* CoreGraphics.framework */; };
 		35BDDD4E188CF8FB0038537E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35BDDD4D188CF8FB0038537E /* UIKit.framework */; };
@@ -189,6 +194,16 @@
 		3507F40518A8C9250099493A /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
 		3507F40618A8C9250099493A /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
 		3507F40718A8C9250099493A /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
+		358CC7C018C71FE40037F708 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
+		358CC7C218C720D70037F708 /* DataModel 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DataModel 2.xcdatamodel"; sourceTree = "<group>"; };
+		358CC7CE18C722A70037F708 /* Account.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Account.h; sourceTree = "<group>"; };
+		358CC7CF18C722A70037F708 /* Account.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Account.m; sourceTree = "<group>"; };
+		358CC7D018C722A70037F708 /* Feed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Feed.h; sourceTree = "<group>"; };
+		358CC7D118C722A70037F708 /* Feed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Feed.m; sourceTree = "<group>"; };
+		358CC7D318C722A70037F708 /* _Account.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _Account.h; sourceTree = "<group>"; };
+		358CC7D418C722A70037F708 /* _Account.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _Account.m; sourceTree = "<group>"; };
+		358CC7D518C722A70037F708 /* _Feed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _Feed.h; sourceTree = "<group>"; };
+		358CC7D618C722A70037F708 /* _Feed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _Feed.m; sourceTree = "<group>"; };
 		35BDDD46188CF8FB0038537E /* Moment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Moment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35BDDD49188CF8FB0038537E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		35BDDD4B188CF8FB0038537E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -417,6 +432,37 @@
 			path = WeChatSDK_1.4.2.1;
 			sourceTree = "<group>";
 		};
+		358CC7CC18C722A70037F708 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				358CC7CD18C722A70037F708 /* Human */,
+				358CC7D218C722A70037F708 /* Machine */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		358CC7CD18C722A70037F708 /* Human */ = {
+			isa = PBXGroup;
+			children = (
+				358CC7CE18C722A70037F708 /* Account.h */,
+				358CC7CF18C722A70037F708 /* Account.m */,
+				358CC7D018C722A70037F708 /* Feed.h */,
+				358CC7D118C722A70037F708 /* Feed.m */,
+			);
+			path = Human;
+			sourceTree = "<group>";
+		};
+		358CC7D218C722A70037F708 /* Machine */ = {
+			isa = PBXGroup;
+			children = (
+				358CC7D318C722A70037F708 /* _Account.h */,
+				358CC7D418C722A70037F708 /* _Account.m */,
+				358CC7D518C722A70037F708 /* _Feed.h */,
+				358CC7D618C722A70037F708 /* _Feed.m */,
+			);
+			path = Machine;
+			sourceTree = "<group>";
+		};
 		35BDDD3D188CF8FB0038537E = {
 			isa = PBXGroup;
 			children = (
@@ -456,6 +502,7 @@
 		35BDDD4F188CF8FB0038537E /* Moment */ = {
 			isa = PBXGroup;
 			children = (
+				358CC7CC18C722A70037F708 /* CoreData */,
 				3507F3B518A8C06F0099493A /* CoreAgent */,
 				3507F21E18A484320099493A /* Skin */,
 				3507F22918A48B6D0099493A /* Utility */,
@@ -465,6 +512,7 @@
 				35BDDD59188CF8FB0038537E /* MTAppDelegate.m */,
 				35BDDD5B188CF8FB0038537E /* Images.xcassets */,
 				35BDDD50188CF8FB0038537E /* Supporting Files */,
+				358CC7BF18C71FE40037F708 /* DataModel.xcdatamodeld */,
 			);
 			path = Moment;
 			sourceTree = "<group>";
@@ -749,6 +797,7 @@
 				35BDDD43188CF8FB0038537E /* Frameworks */,
 				35BDDD44188CF8FB0038537E /* Resources */,
 				5D24D84E547E47C3ADC3881C /* Copy Pods Resources */,
+				35C1AA1418C715F90038518A /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -931,6 +980,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		35C1AA1418C715F90038518A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "MODELS_DIR=\"${PROJECT_DIR}/$PROJECT_NAME\"\n\n# - 替换相应的 xxxxx.xcdatamodeld名称\nDATA_MODEL_PACKAGE=\"$MODELS_DIR/DataModel.xcdatamodeld\"\n\nCURRENT_VERSION=`/usr/libexec/PlistBuddy \"$DATA_MODEL_PACKAGE/.xccurrentversion\" -c 'print _XCCurrentVersionName'`\n\nif [ -x /usr/local/bin/mogenerator ]; then\necho \"mogenerator exists in /usr/local/bin path\";\nMOGENERATOR_DIR=\"/usr/local/bin\";\nelif [ -x /usr/bin/mogenerator ]; then\necho \"mogenerator exists in /usr/bin path\";\nMOGENERATOR_DIR=\"/usr/bin\";\nelse\necho \"mogenerator not found\"; exit 1;\nfi\n#ARC\n$MOGENERATOR_DIR/mogenerator --template-var arc=true -m \"$DATA_MODEL_PACKAGE/$CURRENT_VERSION\" -M \"$MODELS_DIR/CoreData/Machine/\" -H \"$MODELS_DIR/CoreData/Human/\"\n\n#NO-ARC\n#$MOGENERATOR_DIR/mogenerator -m \"$DATA_MODEL_PACKAGE/$CURRENT_VERSION\" -M \"$MODELS_DIR/CoreData/Machine/\" -H \"$MODELS_DIR/CoreData/Human/\"";
+		};
 		5D24D84E547E47C3ADC3881C /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -968,6 +1030,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				358CC7DA18C722A70037F708 /* _Feed.m in Sources */,
 				3507F3BC18A8C06F0099493A /* MTCoreAgent.m in Sources */,
 				35BDDE55188CF9EA0038537E /* MTNavigationController.m in Sources */,
 				35BDDD56188CF8FB0038537E /* main.m in Sources */,
@@ -977,13 +1040,17 @@
 				3507F22818A488440099493A /* MTSkinBase.m in Sources */,
 				3507F22118A484510099493A /* MTSkinManager.m in Sources */,
 				3507F24118A5D8AF0099493A /* MTLoginViewController.m in Sources */,
+				358CC7D818C722A70037F708 /* Feed.m in Sources */,
 				3507F23A18A4DE530099493A /* MTFont.m in Sources */,
 				3507F22518A487690099493A /* MTSkinDefault.m in Sources */,
 				35BDDD5A188CF8FB0038537E /* MTAppDelegate.m in Sources */,
 				3507F22C18A48B950099493A /* MTImageTool.m in Sources */,
+				358CC7D718C722A70037F708 /* Account.m in Sources */,
 				3507F25418A87B920099493A /* MTPublisherBarViewController.m in Sources */,
+				358CC7C118C71FE40037F708 /* DataModel.xcdatamodeld in Sources */,
 				35BDDE54188CF9EA0038537E /* MTFeedViewController.m in Sources */,
 				3507F3BB18A8C06F0099493A /* CoreAccount.m in Sources */,
+				358CC7D918C722A70037F708 /* _Account.m in Sources */,
 				3507F23318A4DB1E0099493A /* MTUserDefaultsManger.m in Sources */,
 				35F11E8718B49848000488F7 /* MTLogManager.m in Sources */,
 			);
@@ -1229,6 +1296,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		358CC7BF18C71FE40037F708 /* DataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				358CC7C218C720D70037F708 /* DataModel 2.xcdatamodel */,
+				358CC7C018C71FE40037F708 /* DataModel.xcdatamodel */,
+			);
+			currentVersion = 358CC7C218C720D70037F708 /* DataModel 2.xcdatamodel */;
+			path = DataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 35BDDD3E188CF8FB0038537E /* Project object */;
 }

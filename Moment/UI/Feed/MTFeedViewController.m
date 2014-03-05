@@ -14,14 +14,6 @@
 {
     [super viewDidLoad];
     self.navigationItem.title = localstring(@"Moment");
-    DDLogInfo(@"error just test");
-    DDLogInfo(@"error %@",@"is just test");
-    
-    [NSThread detachNewThreadSelector:@selector(doCrash) toTarget:self withObject:nil];
 }
 
-- (void)doCrash{
-    NSArray *arr = @[@"1",@"2"];
-    DDLogInfo(@"%@",arr[2]);
-}
 @end

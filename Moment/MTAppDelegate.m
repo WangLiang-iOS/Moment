@@ -10,12 +10,6 @@
 #import "MTUIKit.h"
 #import "MTUserDefaultsManger.h"
 
-#if __has_feature(objc_arc)
-#define MTSafeRelese(obj) {obj = nil;}
-#else
-#define MTSafeRelese(obj) {[obj release]; obj = nil;}
-#endif
-
 @interface MTAppDelegate()
 @end
 
@@ -25,6 +19,7 @@
 {
     [MTUserDefaultsManger changePersonalityFont:YES];
     [MTLogManager initLogs];
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
@@ -33,7 +28,7 @@
     
     self.window.rootViewController = rootViewController;
     [self.window makeKeyAndVisible];
-    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+
     return YES;
 }
 
