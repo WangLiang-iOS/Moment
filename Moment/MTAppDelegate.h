@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 #define MTDelegate ((MTAppDelegate*)[UIApplication sharedApplication].delegate)
+
 @interface MTAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
